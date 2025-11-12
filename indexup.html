@@ -43,10 +43,81 @@
             <img src="images/mission.svg" alt="" class="w-[667px] h-[402px] rounded-[16px]">
         </div>
 
-        <div class="participant bg-[url(images/participant.svg)] w-[1920px] h-[765px] py-[80px] my-[19px]">
-            <div class="text text-white">
+        <div class="participant bg-[url(images/participant.svg)] w-full h-[765px] py-[80px] my-[19px] flex flex-col items-center gap-y-[81px]">
+            <div class="text text-white flex-col justify-items-center h-fit">
                 <h1 class="font-extrabold text-[48px]">Станьте участником посадки</h1>
-                <h4 class="font-bold text-[32px]">Выберете свой город и формат участия</h4>
+                <h4 class="font-bold text-[32px]">Выберите свой город и формат участия</h4>
+            </div>
+            <div class="search w-[1000px] h-[80px] bg-white opacity-[.88] rounded-[32px] px-[30px] flex justify-between flex-row items-center">
+                <p class="text-[36px] text-[#918A8A] font-light">Самара</p>
+                <img src="images/searchicon.svg" alt="">
+            </div>
+            <button class="w-[637px] h-[70px] bg-[#66B12A] rounded-[32px] font-semibold text-[32px] text-white">Принять участие</button>
+        </div>
+        <div class="format flex flex-col items-center w-full h-[563px] py-[80px] gap-y-[64px]">
+            <h1 class="font-extrabold text-[48px]">Формат участия</h1>
+            <div class="formcont flex flex-row gap-x-[85px]">
+                <div class="private flex flex-col items-center w-fit h-fit gap-y-[24px]">
+                    <img src="images/private person.svg" alt="" class="h-[100px]">
+                    <h2 class="text-[32px] font-bold">Частное лицо</h2>
+                    <p class="font-medium text-[24px]">Подробнее</p>
+                </div>
+                <div class="family flex flex-col items-center w-fit h-fit gap-y-[24px]">
+                    <img src="images/family.svg" alt="" class="h-[100px]">
+                    <h2 class="text-[32px] font-bold">Семья</h2>
+                    <p class="font-medium text-[24px]">Подробнее</p>
+                </div>
+                <div class="company flex flex-col items-center w-fit h-fit gap-y-[24px]">
+                    <img src="images/company.svg" alt="" class="h-[100px]">
+                    <h2 class="text-[32px] font-bold">Компания</h2>
+                    <p class="font-medium text-[24px]">Подробнее</p>
+                </div>
+                <div class="alley flex flex-col items-center w-fit h-fit gap-y-[24px]">
+                    <img src="images/alley.svg" alt="" class="h-[100px]">
+                    <h2 class="text-[32px] font-bold">Аллея Славы</h2>
+                    <p class="font-medium text-[24px]">Подробнее</p>
+                </div>
+            </div>  
+        </div>
+        <div class="paycontainer bg-[#1D1D1D] w-full h-[1080px] flex flex-col items-center py-[80px] gap-y-[80px]">
+            <div class="flex flex-col items-center w-fit">
+                <h1 class="text-[48px] text-white font-extrabold">Посадить дерево</h1>
+                <h2 class="text-[32px] text-white font-extrabold text-center">Выбери желаемое количество<br/>1 дерево = 199₽</h2>
+            </div>
+            <div class="w-[1446px] h-[664px]  flex flex-col items-center py-[35px] px-[21px] gap-y-[44px] bg-white rounded-[32px]">
+                <div class="paychange flex flex-row items-center gap-x-[48px]">
+                    <div class="flex flex-row gap-x-[10px] items-center">
+                        <button class="rupay rounded-full w-[58px] h-[58px] bg-white shadow-[inset_0_0_0_15px_#66B12A]"></button>
+                        <p class="text-[32px] text-[#1E1E1E]">Российский банк</p>
+                    </div>
+                    <div class="flex flex-row gap-x-[10px] items-center">
+                        <button class="rupay rounded-full w-[58px] h-[58px] bg-white shadow-[inset_0_0_0_15px_#DDDDDD]"></button>
+                        <p class="text-[32px] text-[#1E1E1E]">Иностранный банк</p>
+                    </div>
+                </div>
+                <div class="countbuttons flex flex-row gap-x-[20px]">
+                    <button class="w-[69px] h-[44px] bg-[#66B12A] rounded-[59px] text-[32px] text-white">1</button>
+                    <button class="w-[69px] h-[44px] bg-[#D9D9D9] rounded-[59px] text-[32px]">3</button>
+                    <button class="w-[69px] h-[44px] bg-[#D9D9D9] rounded-[59px] text-[32px]">5</button>
+                    <button class="w-[69px] h-[44px] bg-[#D9D9D9] rounded-[59px] text-[32px]">7</button>
+                    <button class="w-[69px] h-[44px] bg-[#D9D9D9] rounded-[59px] text-[32px]">10</button>
+                    <button class="w-[69px] h-[44px] bg-[#D9D9D9] rounded-[59px] text-[32px]">15</button>
+                    <button class="w-[69px] h-[44px] bg-[#D9D9D9] rounded-[59px] text-[32px]">20</button>
+                    <button class="w-[69px] h-[44px] bg-[#D9D9D9] rounded-[59px] text-[32px]">30</button>
+                </div>
+                <div class="counter w-[1018px] h-fit flex flex-row px-[20px] py-[10px] justify-between items-center outline outline-[#D9D9D9] rounded-[15px]">
+                    <button class="bg-[#D9D9D9] h-[100px] w-[100px] rounded-[10px] text-[96px] font-ligh items-center">
+                        <p>-</p>
+                    </button>
+                    <p class="text-[96px] font-light">1</p>
+                    <button class="bg-[#D9D9D9] h-[100px] w-[100px] rounded-[10px] text-[96px] font-light items-center">
+                        <p>+</p>
+                    </button>
+                </div>
+                <div class="search w-[1018px] h-[80px] rounded-[15px] px-[30px] outline outline-[#D9D9D9] flex flex-row items-center">
+                    <p class="text-[36px] text-[#918A8A] font-light">Введите электронную почту</p>
+                </div>
+                <button class="w-[554px] h-[70px] bg-[#66B12A] rounded-[32px] font-semibold text-[32px] text-white">Принять участие</button>
             </div>
         </div>
     </div>
