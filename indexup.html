@@ -48,10 +48,9 @@
                 <h1 class="font-extrabold text-[48px]">Станьте участником посадки</h1>
                 <h4 class="font-bold text-[32px]">Выберите свой город и формат участия</h4>
             </div>
-            <div class="search w-[1000px] h-[80px] bg-white opacity-[.88] rounded-[32px] px-[30px] flex justify-between flex-row items-center">
-                <p class="text-[36px] text-[#918A8A] font-light">Самара</p>
-                <img src="images/searchicon.svg" alt="">
-            </div>
+
+            <input class="email w-[1080px] h-[80px] bg-white opacity-[.88] px-[30px] text-[24px] text-[#918A8A] font-light outline outline-[#D9D9D9] rounded-[32px] bg-no-repeat bg-[right_30px_center]" style="background-image: url(images/searchicon.svg);" type="text" placeholder="Самара">
+
             <button class="w-[637px] h-[70px] bg-[#66B12A] rounded-[32px] font-semibold text-[32px] text-white">Принять участие</button>
         </div>
         <div class="format flex flex-col items-center w-full h-[563px] py-[80px] gap-y-[64px]">
@@ -84,7 +83,7 @@
                 <h1 class="text-[48px] text-white font-extrabold">Посадить дерево</h1>
                 <h2 class="text-[32px] text-white font-extrabold text-center">Выбери желаемое количество<br/>1 дерево = 199₽</h2>
             </div>
-            <div class="w-[1446px] h-[664px]  flex flex-col items-center py-[35px] px-[21px] gap-y-[44px] bg-white rounded-[32px]">
+            <div class="w-[1446px] h-fit  flex flex-col items-center py-[35px] px-[21px] gap-y-[44px] bg-white rounded-[32px]">
                 <div class="paychange flex flex-row items-center gap-x-[48px]">
                     <div class="flex flex-row gap-x-[10px] items-center">
                         <button class="rupay rounded-full w-[58px] h-[58px] bg-white shadow-[inset_0_0_0_15px_#66B12A]"></button>
@@ -114,10 +113,40 @@
                         <p>+</p>
                     </button>
                 </div>
-                <div class="search w-[1018px] h-[80px] rounded-[15px] px-[30px] outline outline-[#D9D9D9] flex flex-row items-center">
-                    <p class="text-[36px] text-[#918A8A] font-light">Введите электронную почту</p>
-                </div>
+                <input type="email" value="Введите электронную почту" class="email w-[1018px] h-[80px] text-[24px] text-[#918A8A] font-light outline outline-[#D9D9D9] rounded-[15px] px-[20px] py-[25px]">
                 <button class="w-[554px] h-[70px] bg-[#66B12A] rounded-[32px] font-semibold text-[32px] text-white">Принять участие</button>
+            </div>
+        </div>
+        <div class="bg-[#66B12A] w-full h-fit flex flex-col gap-y-[52px] py-[80px] items-center">
+            <h1 class="text-white text-[48px] font-extrabold">Внеси свой вклад в будущее</h1>
+            <div class="w-[1630px] h-fit flex flex-row gap-x-[20px] items-center">
+                <div class="w-fit h-[888px] p-[24px] flex flex-col gap-y-[20px] bg-white rounded-[32px] items-center">
+                    <img src="images/vklad1.svg" alt="" class="w-full h-[452px] rounded-[20px]">
+                    <div class="text flex flex-col items-center w-full h-fit gap-y-[20px]">
+                        <h2 class="text-[#1E1E1E] text-[32px] font-bold">Посвящение в мужчины</h2>
+                        <p class="w-[428px] h-fit text-[#848484] text-[24px] font-medium">Мужчина — это не про бороду. Это про ответственность. Один мальчик сажает одно дерево — и у него появляется что-то своё, живое.</p>
+                    </div>
+                    <p class="text-[#1E1E1E] text-[24px] font-bold">Стоимость - 5000₽</p>
+                    <button class="w-[269px] h-[70px] bg-[#66B12A] rounded-[20px] font-semibold text-[24px] text-white">Записаться</button>
+                </div>
+                <div class="w-fit h-[888px] p-[24px] flex flex-col gap-y-[20px] bg-white rounded-[32px] items-center">
+                    <img src="images/vklad2.svg" alt="" class="w-full h-[452px] rounded-[20px]">
+                    <div class="text flex flex-col items-center w-full h-fit gap-y-[20px]">
+                        <h2 class="text-[#1E1E1E] text-[32px] font-bold">Свадебное дерево</h2>
+                        <p class="w-[428px] h-fit text-[#848484] text-[24px] font-medium">Свадьба — это не один день, а начало жизни вдвоём. Посаженное дерево растёт вместе с вами, превращая любовь в корни и память</p>
+                    </div>
+                    <p class="text-[#1E1E1E] text-[24px] font-bold">Стоимость - 5000₽</p>
+                    <button class="w-[269px] h-[70px] bg-[#66B12A] rounded-[20px] font-semibold text-[24px] text-white">Записаться</button>
+                </div>
+                <div class="w-fit h-[888px] p-[24px] flex flex-col gap-y-[20px] bg-white rounded-[32px] items-center">
+                    <img src="images/vklad3.svg" alt="" class="w-full h-[452px] rounded-[20px]">
+                    <div class="text flex flex-col items-center w-full h-fit gap-y-[20px]">
+                        <h2 class="text-[#1E1E1E] text-[32px] font-bold">Роща Славы</h2>
+                        <p class="w-[428px] h-fit text-[#848484] text-[24px] font-medium">У каждого дерева — имя. У каждой семьи — место, куда можно приходить, обнимать ствол и говорить то, что не сказано.</p>
+                    </div>
+                    <p class="text-[#1E1E1E] text-[24px] font-bold">Стоимость - 5000₽</p>
+                    <button class="w-[269px] h-[70px] bg-[#66B12A] rounded-[20px] font-semibold text-[24px] text-white">Записаться</button>
+                </div>
             </div>
         </div>
     </div>
