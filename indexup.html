@@ -49,7 +49,7 @@
                 <h4 class="font-bold text-[32px]">Выберите свой город и формат участия</h4>
             </div>
 
-            <input class="email w-[1080px] h-[80px] bg-white opacity-[.88] px-[30px] text-[24px] text-[#918A8A] font-light outline outline-[#D9D9D9] rounded-[32px] bg-no-repeat bg-[right_30px_center]" style="background-image: url(images/searchicon.svg);" type="text" placeholder="Самара">
+            <input class="country w-[1080px] h-[80px] bg-white opacity-[.88] px-[30px] text-[24px] text-[#918A8A] font-light rounded-[32px] bg-no-repeat bg-[right_30px_center]" style="background-image: url(images/searchicon.svg);" type="text" placeholder="Самара">
 
             <button class="w-[637px] h-[70px] bg-[#66B12A] rounded-[32px] font-semibold text-[32px] text-white">Принять участие</button>
         </div>
@@ -113,7 +113,7 @@
                         <p class="leading-none">+</p>
                     </button>
                 </div>
-                <input type="email" value="Введите электронную почту" class="email w-[1018px] h-[80px] text-[24px] text-[#918A8A] font-light outline outline-[#D9D9D9] rounded-[15px] px-[20px] py-[25px]">
+                <input class="email w-[1018px] h-[80px] bg-white px-[20px] py-[25px] text-[24px] text-[#918A8A] font-light outline outline-[#D9D9D9] rounded-[15px]" type="text" placeholder="Введите свою почту">
                 <button class="w-[554px] h-[70px] bg-[#66B12A] rounded-[32px] font-semibold text-[32px] text-white">Принять участие</button>
             </div>
         </div>
@@ -220,22 +220,77 @@
         </div>
         <div class="bg-[url(images/hiw.svg)] w-full h-fit flex flex-col gap-y-[80px] py-[80px] items-center">
             <h1 class="text-[48px] text-[#66B12A] font-extrabold">Как это работает?</h1>
-            <div class="w-fit h-fit flex flex-row gap-x-[80px]">
-                <div class="bg-[#66B12A] text-white w-[310px] h-full flex flex-col items-center gap-y-[20px] py-[40px] px-[10px] rounded-[10px]">
+            <div class="w-fit flex flex-row gap-x-[80px]">
+                <div class="bg-[#66B12A] text-white w-[310px] flex flex-col items-center gap-y-[20px] py-[40px] px-[10px] rounded-[10px] min-h-[276px]">
                     <h2 class="text-white text-[48px] font-bold">ШАГ 1</h2>
-                    <p class="text-white text-[32px] font-semibold w-full">Выберите город и формат</p>
+                    <p class="text-white text-[32px] font-semibold w-full text-center">Выберите город и формат</p>
                 </div>
-                <div class="bg-[#66B12A] text-white w-[310px] h-full flex flex-col items-center gap-y-[20px] py-[40px] px-[10px] rounded-[10px]">
+                <div class="bg-[#66B12A] text-white w-[310px] flex flex-col items-center gap-y-[20px] py-[40px] px-[10px] rounded-[10px] min-h-[276px]">
                     <h2 class="text-white text-[48px] font-bold">ШАГ 2</h2>
-                    <p class="text-white text-[32px] font-semibold w-full">Оплатите участие</p>
+                    <p class="text-white text-[32px] font-semibold w-full text-center">Оплатите участие</p>
                 </div>
-                <div class="bg-[#66B12A] text-white w-[310px] h-full flex flex-col items-center gap-y-[20px] py-[40px] px-[10px] rounded-[10px]">
+                <div class="bg-[#66B12A] text-white w-[310px] flex flex-col items-center gap-y-[20px] py-[40px] px-[10px] rounded-[10px] min-h-[276px]">
                     <h2 class="text-white text-[48px] font-bold">ШАГ 3</h2>
-                    <p class="text-white text-[32px] font-semibold w-full">Получите приглашение и координаты</p>
+                    <p class="text-white text-[32px] font-semibold w-full text-center">Получите приглашение и координаты</p>
                 </div>
-                <div class="bg-[#66B12A] text-white w-[310px] h-full flex flex-col items-center gap-y-[20px] py-[40px] px-[10px] rounded-[10px]">
+                <div class="bg-[#66B12A] text-white w-[310px] flex flex-col items-center gap-y-[20px] py-[40px] px-[10px] rounded-[10px] min-h-[276px]">
                     <h2 class="text-white text-[48px] font-bold">ШАГ 4</h2>
-                    <p class="text-white text-[32px] font-semibold w-full">Приезжайте и сажайте</p>
+                    <p class="text-white text-[32px] font-semibold w-full text-center">Приезжайте и сажайте</p>
+                </div>
+            </div>
+            <button class="w-fit h-fit bg-[#66B12A] rounded-[16px] font-semibold text-[24px] text-white px-[58px] py-[20px]">Принять участие</button>
+        </div>
+        <div class="bg-[#1D1D1D] w-full h-fit flex flex-row gap-x-[80px] p-[80px] items-center justify-center">
+            <div class="bg-white p-[75px] flex flex-col gap-y-[35px] w-fit h-fit rounded-[32px] items-center">
+                <h1 class="text-[32px] font-semibold">Свяжитесь с нами</h1>
+                <div class="w-full h-fit flex flex-row gap-x-[30px]">
+                    <input class="name w-[356px] h-fit px-[24px] py-[10px] text-[32px] text-[#918A8A] font-medium outline outline-[#D9D9D9] rounded-[32px]" type="text" placeholder="Имя">
+                    <input class="email w-[356px] h-fit px-[24px] py-[10px] text-[32px] text-[#918A8A] font-medium outline outline-[#D9D9D9] rounded-[32px]" type="text" placeholder="Email">
+                </div>
+                <input class="message w-full h-fit px-[24px] py-[10px] text-[32px] text-[#918A8A] font-medium outline outline-[#D9D9D9] rounded-[32px]" type="text" placeholder="Ваше сообщение">
+                <button class="w-fit h-fit bg-[#66B12A] rounded-[24px] font-semibold text-[24px] text-white px-[90px] py-[20px]">Отправить</button>
+            </div>
+            <div class="w-fit h-fit flex flex-col gap-y-[50px] p-[10px]">
+                <p class="text-[32px] text-white font-bold">Email:<br/>info@derevya.ru</p>
+                <p class="text-[32px] text-white font-bold">Телефон:<br/>+7 (999) 999-99-99</p>
+                <div class="w-fit h-fit flex flex-row gap-x-[35px]">
+                    <img src="images/VK.svg" alt="" class="h-[100px] w-[100px]">
+                    <img src="images/Telegram.svg" alt="" class="h-[100px] w-[100px]">
+                    <img src="images/YouTube.svg" alt="" class="h-[100px] w-[100px]">
+                </div>
+            </div>
+        </div>
+        <div class="w-full h-fit flex flex-col gap-y-[80px] p-[80px] bg-white items-center">
+            <h1 class="text-[48px] font-extrabold">Наши партнеры</h1>
+            <div class="w-full h-fit flex flex-row gap-x-[16px] items-center">
+                <img src="images/toaz.svg" alt="" class="w-full">
+                <img src="images/nornickel.svg" alt="" class="w-full">
+                <img src="images/lukoil.svg" alt="" class="w-full">
+                <img src="images/fosagro.svg" alt="" class="w-full">
+                <img src="images/gazprom.svg" alt="" class="w-full">
+            </div>
+        </div>
+        <div class="bg-[#1D1D1D] w-full h-fit px-[40px] py-[80px] flex flex-row justify-between">
+            <div class="w-fit h-fit flex flex-col gap-y-[15px] text-center">
+                <img src="images/logo.svg" alt="" class="w-full h-fit">
+                <p class="w-full h-fit text-[32px] font-medium text-white">© ТСПК, 2025</p>
+            </div>
+            <div class="w-[610px] h-fit flex flex-row gap-x-[100px]">
+                <div class="w-full h-fit p-[10px] flex flex-col gap-y-[10px] text-white text-wrap">
+                    <h2 class="text-[32px] font-bold h-full">Навигация</h2>
+                    <p class="text-[24px] h-full">Главная</p>
+                    <p class="text-[24px] h-full">Для компаний</p>
+                    <p class="text-[24px] h-full">Истории</p>
+                    <p class="text-[24px] h-full">Контакты</p>
+                    <p class="text-[24px] h-full">Пользовательское соглашение</p>
+                </div>
+                <div class="w-full h-fit p-[10px] flex flex-col gap-y-[10px] text-white text-wrap">
+                    <h2 class="text-[32px] font-bold h-full">Контакты</h2>
+                    <p class="text-[24px] h-full">Email</p>
+                    <p class="text-[24px] h-full">Телефон</p>
+                    <p class="text-[24px] h-full">Вконтакте</p>
+                    <p class="text-[24px] h-full">Телеграмм</p>
+                    <p class="text-[24px] h-full">YouTube</p>
                 </div>
             </div>
         </div>
